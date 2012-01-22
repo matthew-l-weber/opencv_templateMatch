@@ -1,12 +1,5 @@
 ################################################################################
 # © Copyright 2012, Rockwell Collins, Inc.  All rights reserved.
-#
-# Information contained herein is privileged or confidential information
-# of Rockwell Collins, Inc. within the meaning of 5 USC 552, and as such
-# is exempt from the public disclosure provisions thereof.
-#
-# Security classification: UNCLASSIFIED
-#
 ################################################################################
 
 CC = $(TARGET_BIN)gcc
@@ -30,7 +23,5 @@ clean:
 	-rm -f opencv_templatematch
 
 #########################################################################
-#
-# Security classification:  UNCLASSIFIED
 #
 #########################################################################

@@ -2,8 +2,8 @@
  * TemplateMatching 1.0
  *
  *
- * 
- *
+ * © Copyright 2012, Rockwell Collins, Inc.  All rights reserved.
+ *           Modifications added by Matt Weber
  *
  *
  *
