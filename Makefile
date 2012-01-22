@@ -13,7 +13,7 @@ CC = $(TARGET_BIN)gcc
 CFLAGS ?= -O2 -W -Wall
 LDFLAGS ?=
 
-CFLAGS += --sysroot=$(SYSROOT) 
+CFLAGS += --sysroot=$(SYSROOT) -I$(SYSROOT)/../../../staging/usr/include/
 
 LIBS= -lopencv_core -lopencv_highgui
 
