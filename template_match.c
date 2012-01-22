@@ -17,6 +17,7 @@
 #include "opencv/highgui.h"
 
 #include "sys/time.h"
+
 int main()
 {
 	IplImage	*img;
