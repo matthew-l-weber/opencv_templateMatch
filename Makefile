@@ -19,10 +19,10 @@ LIBS= -lopencv_core -lopencv_highgui
 
 all: opencv_templatematch
 
-imageCapture.o : template_match.c
+template_match.o : template_match.c
 	$(CC) $(CFLAGS) -c -o $@ $<
 
-imageCapture: template_match.o
+opencv_templatematch: template_match.o
 	$(CC) $(LDFLAGS) -o $@ $^ $(LIBS)
 
 clean:
