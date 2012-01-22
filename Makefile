@@ -20,7 +20,7 @@ LIBS= -lopencv_core -lopencv_highgui
 all: opencv_templatematch
 
 template_match.o : template_match.c
-	export ; $(CC) $(CFLAGS) -c -o $@ $<
+	$(CC) $(CFLAGS) -c -o $@ $<
 
 opencv_templatematch: template_match.o
 	$(CC) $(LDFLAGS) -o $@ $^ $(LIBS)

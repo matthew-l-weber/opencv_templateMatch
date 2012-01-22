@@ -16,7 +16,7 @@
 #include "opencv/cv.h"
 #include "opencv/highgui.h"
 
-#include "sys/time.h"
+#include "time.h"
 
 int main()
 {
