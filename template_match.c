@@ -31,6 +31,8 @@ int main()
 	int		img_width, img_height;
 	int		tpl_width, tpl_height;
 	int		res_width, res_height;
+	int		quality[3];
+
 	
 	
 	
@@ -88,8 +90,11 @@ int main()
 	/* save images */	
 	tmp=cvCreateImage( cvSize( res->width, res->height ), IPL_DEPTH_8U, res->nChannels );
 	cvConvertScaleAbs(res, tmp, 256.0,0.0);
-	cvSaveImage("output.bmp",tmp);
-	cvSaveImage("square.bmp",img);	
+	quality[0] = CV_IMWRITE_JPEG_QUALITY;
+	quality[1] = 100;
+	quality[2] = 0;
+	cvSaveImage("output.bmp",tmp,quality);
+	cvSaveImage("square.bmp",img,quality);	
 	
 	cvReleaseImage( &img );
 	cvReleaseImage( &tpl );
