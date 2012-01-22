@@ -13,14 +13,14 @@ CC = $(TARGET_BIN)gcc
 CFLAGS ?= -O2 -W -Wall
 LDFLAGS ?=
 
-CFLAGS += --sysroot=$(SYSROOT)
+CFLAGS += --sysroot=$(SYSROOT) 
 
 LIBS= -lopencv_core -lopencv_highgui
 
 all: opencv_templatematch
 
 template_match.o : template_match.c
-	$(CC) $(CFLAGS) -c -o $@ $<
+	export ; $(CC) $(CFLAGS) -c -o $@ $<
 
 opencv_templatematch: template_match.o
 	$(CC) $(LDFLAGS) -o $@ $^ $(LIBS)
